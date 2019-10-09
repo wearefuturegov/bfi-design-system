@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Container from './bfi-components/Container'
+
 export class Nav extends Component {
     render() {
         return (
-            <div>
-                <Link to="/">Home</Link>
-                <Link to="/principles">Principles</Link>
-            </div>
+            <nav>
+                <Container>
+                    <div className="inner">
+                        <span><Link to="/">BFI Design System</Link></span>
+                        <ul>
+                            <li><Link to="/principles">Principles</Link></li>
+                        </ul>
+                    </div>
+                </Container>
+            </nav>
         )
     }
 }

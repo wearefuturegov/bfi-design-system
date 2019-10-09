@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Principle from '../Principle';
 import Proptypes from 'prop-types';
 
+import Container from '../bfi-components/Container'
+
 const StyledHeading = styled.h1`
 `
  
@@ -25,14 +27,14 @@ class Principles extends Component {
       }
 
     render () {
-        return this.state.principles.map((principle) => (
-            <Principle key={ principle.id } principle={ principle }></Principle>
-        ))
+        return ( 
+            <Container>
+                { this.state.principles.map((principle) => (
+                    <Principle key={ principle.id } principle={ principle }></Principle>
+                )) } 
+            </Container>
+        )
     }
-}
-
-Principles.propTypes = {
-    principles: Proptypes.array.isRequired
 }
 
 export default Principles;
