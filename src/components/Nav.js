@@ -10,7 +10,10 @@ export class Nav extends Component {
                     <div className="inner">
                         <span><Link to="/">BFI Design System</Link></span>
                         <ul>
-                            <li><Link to="/principles">Principles</Link></li>
+                            <li><Link to="/values">Values</Link></li>
+                            <li><Link to="/content">Content</Link></li>
+                            <li><Link to="/design">Design</Link></li>
+                            <li><Link to="/components">Components</Link></li>
                         </ul>
                     </div>
                 </Container>
